@@ -57,7 +57,6 @@ def list_songs_by_artist
         puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
-  end
 
 
 
