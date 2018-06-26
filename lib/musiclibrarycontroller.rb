@@ -48,6 +48,13 @@ def list_songs_by_artist
       end
     end
 
+    def play_song
+      puts "Which song number would you like to play?"
+      input = gets.strip.to_i
+
+      if song = Song.find_by_name(input)
+
+
 
 
 
