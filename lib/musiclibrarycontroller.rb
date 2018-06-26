@@ -21,6 +21,22 @@ def call
   puts "To quit, type 'exit'."
   puts "What would you like to do?"
   message = gets.strip
+
+  if message == "list songs"
+    list_songs
+  end
+  if message == "list artists"
+    list_artists
+  end
+  if message == "list artist"
+    list_songs_by_artist
+  end
+  if message == "list genre"
+    list_songs_by_genre
+  end
+  if message == "play song"
+    play_song
+  end
 end
 end
 
@@ -57,6 +73,7 @@ def list_songs_by_artist
         puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
+
 
 
 
