@@ -34,7 +34,6 @@ end
 def list_artists
   new_list = Song.all.sort{|a,z| a.name <=> z.name}
    new_list.each.with_index(1) do |song,i|
-     binding.pry
      puts "#{i}. #{song.artist.name}"
   end
 end
