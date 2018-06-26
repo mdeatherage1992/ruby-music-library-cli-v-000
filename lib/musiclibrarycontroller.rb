@@ -37,6 +37,9 @@ def call
   if message == "play song"
     play_song
   end
+  if message == "list genres"
+    list_genres
+  end
 end
 end
 
