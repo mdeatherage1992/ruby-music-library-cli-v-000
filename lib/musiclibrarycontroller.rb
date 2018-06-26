@@ -40,8 +40,8 @@ end
 
 def list_genres
   new_list = Genre.all.sort{|a,z| a.name <=> z.name}
-  new_list.each.with_index do |genre,i|
-    puts "#{i + 1}. #{genre.name}"
+  new_list.each.with_index(1) do |genre,i|
+    puts "#{i}. #{genre.name}"
     binding.pry
 end
 end
