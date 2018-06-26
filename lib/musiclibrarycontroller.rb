@@ -31,7 +31,7 @@ def call
   if message == "list artist"
     list_songs_by_artist
   end
-  if message == "list genre"
+  if message == "list genres"
     list_songs_by_genre
   end
   if message == "play song"
