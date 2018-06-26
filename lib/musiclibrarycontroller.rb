@@ -33,7 +33,7 @@ end
 
 def list_artists
   new_list = Artist.all.sort{|a,z| a.name <=> z.name}
-   new_list.each.with_index(1) do |song,i|
+   new_list.each.with_index(1) do |artist,i|
      puts "#{i}. #{song.artist.name}"
   end
 end
