@@ -25,6 +25,7 @@ end
 end
 
 def list_songs_by_artist
+  artist = ''
   puts "Please enter the name of an artist:"
     input = gets.strip
 
