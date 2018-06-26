@@ -30,7 +30,7 @@ def list_songs_by_artist
     input = gets.strip
 
     if input = Artist.find_by_name(input)
-      artist = artist.input
+      input = artist.name
       new_list = artist.songs.sort {|a,z| a <=> z}
       new_list.each.with_index(1) do |song,i|
         puts "#{i}. #{song.name} - #{song.genre.name}"
