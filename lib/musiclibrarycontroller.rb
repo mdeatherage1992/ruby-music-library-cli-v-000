@@ -53,7 +53,7 @@ def list_songs_by_artist
       input = gets.strip.to_i
 
       if (1..Song.all.length).include?(input)
-        song = Song.all.sort{|a,z| a.name <=> z.name}
+        song = Song.all.sort{|a,z| a.name <=> z.name}[input]
         puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
