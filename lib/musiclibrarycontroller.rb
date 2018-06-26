@@ -37,7 +37,7 @@ def list_songs_by_artist
   end
 
   def list_songs_by_genre
-    puts "Please enter the name of an artist:"
+    puts "Please enter the name of an genre:"
       input = gets.strip
 
       if genre = Genre.find_by_name(input)
